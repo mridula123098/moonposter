@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+span{
+  font-weight: 900;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+body {
+  background: url(star.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(142, 138, 138);
+  /* line-height: 0.8; */
+  background-position: center;
+  font-family: "Courier Prime", monospace;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: max-content max-content max-content;
+  gap: 2rem;
+  align-items: start;
+ 
+
+}
+.hero {
+line-height: 0.8;
+  font-family: 'Bowlby One', cursive;
+  font-size: 23vw;
+  justify-content: center;
+}
+.foot{
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 2rem;
+  text-align: right; 
+}
+.moon_head p {
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: whitesmoke;
+}
+.moonImg {
+  max-width: 67vw;
+  aspect-ratio: 1/1;
+}
+.side_info{
+  font: size 1.3rem;
+}
+.side_info {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  
+}
+.bottom_info {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin-top: -6rem;
+}
+.foot {
+  grid-row:3/4;
+  grid-column:2/4;
+  justify-self: end;
+  align-self:end;
+}
+.hero {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 4rem max-content max-content max-content;
+  text-align: center;
+  justify-content: center;
+}
+.moon_head p {
+  margin: 0;
+  padding: 0;
+}
+.moonImg {
+  grid-row: 2/-1;
+  grid-column: 1/-1;
+  align-self: center;
+  /* border: 12px solid orchid; */
+  justify-self: center;
+}
+.moon_head {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+}
+.moon_head p:nth-of-type(1) {
+  color: #f8c2fe;
+}
+
